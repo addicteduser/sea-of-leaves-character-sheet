@@ -88,7 +88,7 @@ defaultCharacter =
     , corruption = 0
     , wealth = 3.0
     , headgear = { itemName = "Helmet", itemType = Armor, description = "helmet", value = "", slotSize = 1 }
-    , armor = { itemName = "", itemType = Weapon, description = "", value = "", slotSize = 0 }
+    , armor = { itemName = "Light Armor", itemType = Armor, description = "", value = "", slotSize = 0 }
     , handItems = []
     , beltItems = []
     , inventory = []
