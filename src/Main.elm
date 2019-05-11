@@ -1,31 +1,22 @@
 module Main exposing (main)
 
-import Html exposing (Html, div, text)
-import Touch
+import Html
+import Model exposing (Model, Msg, model)
+import Subscriptions exposing (subscriptions)
+import Update exposing (update)
+import View exposing (view)
 
 
-type Msg
-    = Tapped
-
-
-update : Msg -> Int -> Int
-update Tapped count =
-    count + 1
-
-
-view : Int -> Html Msg
-view count =
-    div []
-        [ div [ Touch.onEnd (\event -> Tapped) ]
-            [ text "Hello from Elm!" ]
-        , text <| "Tap count: " ++ toString count
-        ]
-
-
-main : Program Never Int Msg
+main : Program Never Model Msg
 main =
-    Html.beginnerProgram
-        { model = 0
-        , update = update
+    Html.program
+        { init = init
         , view = view
+        , update = update
+        , subscriptions = subscriptions
         }
+
+
+init : ( Model, Cmd Msg )
+init =
+    ( model, Cmd.none )
