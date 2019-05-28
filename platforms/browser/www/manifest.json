@@ -1,11 +1,11 @@
 {
   "background_color": "#FFF",
   "display": "standalone",
-  "name": "HelloWorld",
-  "short_name": "HelloWorld",
-  "version": "com.example.hello",
-  "description": "A sample Apache Cordova application that responds to the deviceready event.",
-  "author": "Apache Cordova Team",
+  "name": "Sea Of Leaves",
+  "short_name": "Sea Of Leaves",
+  "version": "com.addicteduser.seaofleaves",
+  "description": "A mobile app character sheet for Sea of Leaves.",
+  "author": "TinTin Kalaw",
   "icons": [],
   "start_url": "index.html"
 }

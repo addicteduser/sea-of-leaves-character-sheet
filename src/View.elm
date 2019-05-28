@@ -11,10 +11,14 @@ import Model exposing (..)
 
 view : Model -> Html Msg
 view model =
-    div [ class "container" ]
-        [ viewHeader model.character.name model.character.level
-        , viewSummaryPage model
-        ]
+    node "ons-button" [] [ text "click me" ]
+
+
+
+-- div [ class "container" ]
+--     [ viewHeader model.character.name model.character.level
+--     , viewSummaryPage model
+--     ]
 
 
 viewHeader : String -> Int -> Html Msg
