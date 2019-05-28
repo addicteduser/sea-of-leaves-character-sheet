@@ -8,4 +8,4 @@ jobs:
   include:
     - stage: compile
     script:
-      npm run elm-build
+      - npm run elm-build
