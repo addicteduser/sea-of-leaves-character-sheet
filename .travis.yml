@@ -1,11 +1,2 @@
 language: elm
 elm: 0.18.0
-
-stages:
-  - compile
-
-jobs:
-  include:
-    - stage: compile
-    script:
-      - npm run elm-build
