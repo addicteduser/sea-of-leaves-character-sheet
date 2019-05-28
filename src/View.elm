@@ -3,6 +3,7 @@ module View exposing (view)
 import Html exposing (..)
 import Html.Attributes exposing (..)
 import Model exposing (..)
+import OnsenUI exposing (..)
 
 
 
@@ -11,7 +12,7 @@ import Model exposing (..)
 
 view : Model -> Html Msg
 view model =
-    node "ons-button" [] [ text "click me" ]
+    onsButton [] [ text "click me" ]
 
 
 
