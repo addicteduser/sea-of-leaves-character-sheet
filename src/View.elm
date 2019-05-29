@@ -12,7 +12,15 @@ import OnsenUI exposing (..)
 
 view : Model -> Html Msg
 view model =
-    onsButton [] [ text "click me" ]
+    onsPage []
+        [ onsToolbar []
+            [ div [ class "left" ]
+                [ onsToolbarButton [] [ onsIcon [ icon "fa-leaf", style [ ( "color", "green" ) ] ] [] ]
+                ]
+            , div [ class "center" ] [ text "Sea of Leaves" ]
+            , div [ class "right" ] []
+            ]
+        ]
 
 
 
